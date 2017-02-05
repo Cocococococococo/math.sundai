@@ -4,7 +4,7 @@
 //
 //  Created by 中川誇子 on 2017/01/08.
 //  Copyright © 2017年 中川誇子. All rights reserved.
-//
+////////////
 
 import UIKit
 
@@ -27,11 +27,11 @@ class AViewController: UIViewController {
     
     var counts:[Int] = [1,1,1,1]
     
-    var counts:[Int] = []
+   // var counts:[Int] = []
     
     
     let saveData: UserDefaults = UserDefaults.standard
-
+    
     let defaults = UserDefaults.standard
     
     
@@ -69,7 +69,6 @@ class AViewController: UIViewController {
             correctanswer+=1
             self.reload()
         }
-        
     }
     
     @IBAction func batu(){
@@ -85,6 +84,7 @@ class AViewController: UIViewController {
         
         
     }
+    
     
     func reload(){
         let num = answerArray.count - 1
@@ -104,24 +104,7 @@ class AViewController: UIViewController {
             
             self.answerArray.remove(at: randomNum)
             
-         }
+        }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
